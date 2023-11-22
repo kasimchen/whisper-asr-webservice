@@ -6,7 +6,7 @@ ENV POETRY_VENV=/app/.venv
 
 RUN  apt-get install dirmngr
 
-RUN curl -sL "http://keyserver.ubuntu.com/pks/lookup?search=0xB9733A7A07513CAD&op=get" | sudo apt-key add
+#RUN curl -sL "http://keyserver.ubuntu.com/pks/lookup?search=0xB9733A7A07513CAD&op=get" | sudo apt-key add
 
 
 RUN apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 871920D1991BC93C 
