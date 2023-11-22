@@ -4,7 +4,7 @@ FROM nvidia/cuda:11.8.0-cudnn8-runtime-ubuntu22.04
 ENV PYTHON_VERSION=3.10
 ENV POETRY_VENV=/app/.venv
 
-RUN apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 3B4FE6ACC0B21F32RUN apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 40976EAF437D05B5RUN apt-key adv --recv-keys --keyserver keyserver.ubuntu.com EF0F382A1A7B6500
+RUN apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 871920D1991BC93C apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 871920D1991BC93C apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 871920D1991BC93C
 
 
 RUN sed -i s@/archive.ubuntu.com/@/mirrors.ustc.edu.cn/@g /etc/apt/sources.list \
